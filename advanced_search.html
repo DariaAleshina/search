@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="adv_srch_header">
+            <div id="logoinheader">
+                <a href="index.html">
+                    <img src="googlelogo.png" alt="googlelogo" width="70">
+                </a>
+            </div>
+            <div class="header_links">
+                <a href="index.html">Google Search</a>
+                <a href="img.html">Images</a>
+            </div>
+        </div>
+
+        <div id="adv_srch_title">
+            <p>
+                Advanced Search
+            </p>
+        </div>
+
+        <hr>
+
+        <div id="adv_srch_block">
+            <p>
+                Find pages with...
+            </p>
+
+            <form id="adv_srch_form" action="https://www.google.com/search">
+                <div class="adv_srch_input_row">
+                    <label>all these words:</label>
+                    <input class="textarea" autofocus autocomplete="off" rows="1" type="text" name="as_q">
+                </div>
+                <div class="adv_srch_input_row">
+                    <label>this exact word or phrase:</label>
+                    <input class="textarea" autocomplete="off" rows="1" type="text" name="as_epq">
+                </div>
+                <div class="adv_srch_input_row">
+                    <label>any of these words:</label>
+                    <input class="textarea" autocomplete="off" rows="1" type="text" name="as_oq">
+                </div>
+                <div class="adv_srch_input_row">
+                    <label>none of these words:</label>
+                    <input class="textarea" autocomplete="off" rows="1" type="text" name="as_eq">
+
+                    <input class="textarea" hidden autocomplete="off" rows="1" type="text" name="as_qdr" value="all">
+                    <input class="textarea" hidden autocomplete="off" rows="1" type="text" name="as_occt" value="any">
+                </div>
+                <div class="adv_srch_input_button">
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
